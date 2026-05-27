@@ -1,0 +1,39 @@
+{
+  "edges": [
+    {
+      "source_agent_id": "monthly-close-agent",
+      "target_agent_id": "agent-prod-finance-reconciler",
+      "relation": "calls",
+      "environment": "production",
+      "status": "active"
+    },
+    {
+      "source_agent_id": "audit-summary-agent",
+      "target_agent_id": "agent-prod-finance-reconciler",
+      "relation": "delegates_to",
+      "environment": "production",
+      "status": "active"
+    },
+    {
+      "source_agent_id": "agent-prod-finance-reconciler",
+      "target_agent_id": "github-tool",
+      "relation": "uses_tool",
+      "environment": "production",
+      "status": "active"
+    },
+    {
+      "source_agent_id": "agent-prod-finance-reconciler",
+      "target_agent_id": "memory/prod/finance-reconciler",
+      "relation": "writes_to",
+      "environment": "production",
+      "status": "active"
+    },
+    {
+      "source_agent_id": "dev-doc-workflow",
+      "target_agent_id": "agent-dev-doc-summarizer",
+      "relation": "calls",
+      "environment": "development",
+      "status": "disabled"
+    }
+  ]
+}

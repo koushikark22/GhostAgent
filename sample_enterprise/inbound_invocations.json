@@ -1,0 +1,34 @@
+[
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "source_type": "webhook",
+    "source_id": "github-webhook-finance-reconciler",
+    "status": "active",
+    "last_invoked_at": "2026-05-24T18:12:00Z",
+    "environment": "production"
+  },
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "source_type": "scheduler",
+    "source_id": "cron-finance-reconciler-nightly",
+    "status": "active",
+    "last_invoked_at": "2026-05-24T03:00:00Z",
+    "environment": "production"
+  },
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "source_type": "queue",
+    "source_id": "finance-reconciliation-events",
+    "status": "active",
+    "last_invoked_at": "2026-05-23T21:00:00Z",
+    "environment": "production"
+  },
+  {
+    "agent_id": "agent-dev-doc-summarizer",
+    "source_type": "scheduler",
+    "source_id": "cron-doc-summarizer-dev",
+    "status": "disabled",
+    "last_invoked_at": "2026-04-30T12:00:00Z",
+    "environment": "development"
+  }
+]

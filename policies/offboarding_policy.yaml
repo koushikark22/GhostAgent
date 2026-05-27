@@ -1,0 +1,12 @@
+production:
+  approval_required: true
+  allow_direct_delete: false
+  memory_delete_allowed: false
+  memory_quarantine_required: true
+  token_revocation_requires_owner: true
+
+development:
+  approval_required: true
+  allow_direct_delete: false
+  memory_delete_allowed: false
+  memory_quarantine_required: true

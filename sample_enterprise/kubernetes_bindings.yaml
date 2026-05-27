@@ -1,0 +1,19 @@
+- agent_id: agent-prod-finance-reconciler
+  service_account: system:serviceaccount:finance:finance-reconciler-agent
+  namespace: finance
+  binding_name: finance-reconciler-cluster-admin
+  role_name: cluster-admin
+  role_kind: ClusterRole
+  verbs: ["*"]
+  resources: ["*"]
+  status: active
+
+- agent_id: agent-dev-doc-summarizer
+  service_account: system:serviceaccount:dev:doc-summarizer-agent
+  namespace: dev
+  binding_name: doc-summarizer-readonly
+  role_name: view
+  role_kind: Role
+  verbs: ["get", "list"]
+  resources: ["configmaps"]
+  status: removed

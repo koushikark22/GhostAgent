@@ -1,0 +1,20 @@
+[
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "owner": "finance-platform-team",
+    "status": "retire",
+    "reason": "Project migrated to new reconciliation workflow",
+    "environment": "production",
+    "requested_by": "security-platform",
+    "requested_at": "2026-05-25T20:00:00Z"
+  },
+  {
+    "agent_id": "agent-dev-doc-summarizer",
+    "owner": "developer-platform-team",
+    "status": "retire",
+    "reason": "Development proof of concept ended",
+    "environment": "development",
+    "requested_by": "developer-platform",
+    "requested_at": "2026-05-25T20:10:00Z"
+  }
+]

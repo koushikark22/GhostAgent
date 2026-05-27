@@ -1,0 +1,42 @@
+[
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "tool": "github",
+    "connection_id": "github-app-finance-reconciler",
+    "status": "active",
+    "scopes": ["contents:write", "pull_requests:write", "workflows:write"],
+    "privilege": "write",
+    "environment": "production",
+    "last_verified_at": "2026-05-24T15:00:00Z"
+  },
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "tool": "slack",
+    "connection_id": "slack-bot-finance-reconciler",
+    "status": "active",
+    "scopes": ["chat:write", "channels:read"],
+    "privilege": "write",
+    "environment": "production",
+    "last_verified_at": "2026-05-24T15:10:00Z"
+  },
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "tool": "jira",
+    "connection_id": "jira-finance-reconciler",
+    "status": "active",
+    "scopes": ["issues:write", "projects:read"],
+    "privilege": "write",
+    "environment": "production",
+    "last_verified_at": "2026-05-24T15:15:00Z"
+  },
+  {
+    "agent_id": "agent-dev-doc-summarizer",
+    "tool": "github",
+    "connection_id": "github-app-doc-summarizer",
+    "status": "revoked",
+    "scopes": ["contents:read"],
+    "privilege": "read",
+    "environment": "development",
+    "last_verified_at": "2026-05-02T10:00:00Z"
+  }
+]

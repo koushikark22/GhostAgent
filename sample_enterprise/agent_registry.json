@@ -1,0 +1,46 @@
+[
+  {
+    "agent_id": "agent-prod-finance-reconciler",
+    "owner": "finance-platform-team",
+    "status": "retired",
+    "environment": "production",
+    "service_account": "system:serviceaccount:finance:finance-reconciler-agent",
+    "created_at": "2026-01-04T10:00:00Z",
+    "retired_at": "2026-05-20T12:00:00Z",
+    "description": "Reconciles finance records and posts exceptions to collaboration tools.",
+    "tags": ["finance", "reconciliation", "production"]
+  },
+  {
+    "agent_id": "agent-dev-doc-summarizer",
+    "owner": "developer-platform-team",
+    "status": "retired",
+    "environment": "development",
+    "service_account": "system:serviceaccount:dev:doc-summarizer-agent",
+    "created_at": "2026-03-10T10:00:00Z",
+    "retired_at": "2026-05-01T16:00:00Z",
+    "description": "Summarizes internal design notes in development.",
+    "tags": ["docs", "development"]
+  },
+  {
+    "agent_id": "monthly-close-agent",
+    "owner": "finance-platform-team",
+    "status": "active",
+    "environment": "production",
+    "service_account": "system:serviceaccount:finance:monthly-close-agent",
+    "created_at": "2026-02-01T08:00:00Z",
+    "retired_at": null,
+    "description": "Runs monthly close workflow.",
+    "tags": ["finance", "production"]
+  },
+  {
+    "agent_id": "audit-summary-agent",
+    "owner": "finance-platform-team",
+    "status": "active",
+    "environment": "production",
+    "service_account": "system:serviceaccount:finance:audit-summary-agent",
+    "created_at": "2026-02-14T08:00:00Z",
+    "retired_at": null,
+    "description": "Summarizes audit evidence.",
+    "tags": ["audit", "production"]
+  }
+]
